@@ -1,0 +1,153 @@
+/* Start Variables */
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-darkcyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --verylight-gray: hsl(0, 0%, 95%);
+}
+
+/* End Variables */
+
+/* Global Rules */
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* End Global Rules */
+
+
+/* Start Template */
+.template {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--verylight-gray);
+}
+
+.template .container {
+    color: white;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 767px) {
+    .template .container {
+        max-width: 375px;
+    }
+}
+
+.template .container .content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.template .container .content .sedan-box {
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+.template .container .content .suv-box {
+    background-color: var(--Dark-cyan);
+}
+
+
+.template .container .content .luxury-box {
+    background-color: var(--Very-darkcyan);
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+
+@media (max-width: 767px) {
+    .template .container .content {
+        flex-direction: column;
+    }
+}
+
+.template .container .content>div {
+    flex-basis: calc(100% / 3);
+    font-family: "Lexend Deca", sans-serif;
+}
+
+@media (max-width: 767px) {
+    .template .container .content>div {
+        width: 100%;
+    }
+}
+
+.template .container .content>div img {
+    margin: 50px;
+}
+
+.template .container .content>div h2 {
+    text-transform: uppercase;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    width: fit-content;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 35px;
+    color: var(--verylight-gray);
+}
+
+.template .container .content>div p {
+    font-size: 15px;
+    margin-left: 50px;
+    line-height: 1.8;
+    width: fit-content;
+    color: var(--transparent-white);
+}
+
+.template .container .content>div button.orange-btn {
+    color: var(--Bright-orange);
+}
+
+.template .container .content>div button.cyan-btn {
+    color: var(--Dark-cyan);
+}
+
+.template .container .content>div button.darkcyan-btn {
+    color: var(--Very-darkcyan);
+}
+
+
+.template .container .content>div button {
+    display: block;
+    margin: 50px 0 50px 50px;
+    border: 2px solid var(--verylight-gray);
+    width: fit-content;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.template .container .content>div button:hover {
+    background-color: transparent;
+    color: var(--verylight-gray);
+}
+
+
+
+/* End Template */
