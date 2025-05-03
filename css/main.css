@@ -82,11 +82,13 @@ html {
     .template .container .content {
         flex-direction: column;
     }
-.template .container .content .sedan-box {
+
+    .template .container .content .sedan-box {
         border-top-right-radius: 2%;
         border-bottom-left-radius: 0%;
     }
-.template .container .content .luxury-box {
+
+    .template .container .content .luxury-box {
         border-top-right-radius: 0%;
         border-bottom-left-radius: 2%;
     }
@@ -125,20 +127,22 @@ html {
     color: var(--transparent-white);
 }
 
-.template .container .content>div button.orange-btn {
+
+.template .container .content>div a.orange-btn {
     color: var(--Bright-orange);
 }
 
-.template .container .content>div button.cyan-btn {
+
+.template .container .content>div a.cyan-btn {
     color: var(--Dark-cyan);
 }
 
-.template .container .content>div button.darkcyan-btn {
+.template .container .content>div a.darkcyan-btn {
     color: var(--Very-darkcyan);
 }
 
 
-.template .container .content>div button {
+.template .container .content>div a {
     display: block;
     margin: 50px 0 50px 50px;
     border: 2px solid var(--verylight-gray);
@@ -146,16 +150,15 @@ html {
     padding: 15px 25px;
     border-radius: 50px;
     background-color: transparent;
-    cursor: pointer;
+    text-decoration: none;
     background-color: white;
     transition: 0.3s;
 }
 
-.template .container .content>div button:hover {
+.template .container .content>div a:hover {
     background-color: transparent;
     color: var(--verylight-gray);
 }
-
 
 
 /* End Template */
