@@ -160,5 +160,19 @@ html {
     color: var(--verylight-gray);
 }
 
+/* Start Credits */
+.credits {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.credits a {
+    color: var(--Bright-orange);
+}
+
+/* End Credits */
 
 /* End Template */
