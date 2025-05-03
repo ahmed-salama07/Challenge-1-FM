@@ -82,12 +82,12 @@ html {
     .template .container .content {
         flex-direction: column;
     }
-   .template .container .content .sedan-box {
+.template .container .content .sedan-box {
         border-top-right-radius: 2%;
-        border-bottom-left-radius: none;
+        border-bottom-left-radius: 0%;
     }
-   .template .container .content .luxury-box.         {
-        border-top-right-radius: none;
+.template .container .content .luxury-box {
+        border-top-right-radius: 0%;
         border-bottom-left-radius: 2%;
     }
 }
