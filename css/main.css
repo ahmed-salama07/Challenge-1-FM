@@ -162,15 +162,20 @@ html {
 
 /* Start Credits */
 .template .container .credits {
+    font-family: "Lexend Deca", sans-serif;
     font-size: 18px;
     text-align: center;
     margin-top: 50px;
-    color: black;
-    font-family: "Lexend Deca", sans-serif;
+    color: var(--Very-darkcyan);
 }
 
 .template .container .credits a {
     color: var(--Bright-orange);
+    transition: .3s;
+}
+
+.template .container .credits a:hover {
+    color: var(--Dark-cyan);
 }
 
 /* End Credits */
